@@ -1,0 +1,8 @@
+streamlit==1.30.0
+langchain==0.1.4
+langchain-openai==0.0.5
+beautifulsoup4==4.12.2
+python-dotenv==1.0.1
+chromadb==0.3.29
+requests==2.32.2
+fuzzywuzzy==0.18.0
