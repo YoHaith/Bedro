@@ -83,5 +83,95 @@
         "name": "Petroleum Reinigungsmittel",
         "link": "https://petromax.de/cdn/shop/files/Petromax_hf1_Mini_Gasbrenner_mit_Piezo_Zuendung.jpg?v=1697799348&width=1500",
         "image": "https://petromax.de/cdn/shop/files/p_main.jpg?v=1709196980&width=1500"
+    },
+    {
+        "name": "Zelt-Durchführung Loki",
+        "link": "https://petromax.de/products/zelt-durchfuhrung-loki",
+        "image": "https://petromax.de/cdn/shop/files/Frontier_tent_flashing_kit.jpg?crop=center&height=1200&v=1697800369&width=1200"
+    },
+    {
+        "name": "Ofenrohr Loki (Ersatzteil)",
+        "link": "https://petromax.de/products/ofenrohr-loki-ersatzteil",
+        "image": "https://petromax.de/cdn/shop/files/Ofenrohr_lk5.jpg?v=1697799842&width=1500"
+    },
+    {
+        "name": "Kohlerost Loki2",
+        "link": "https://petromax.de/products/kohlerost-loki2",
+        "image": "https://petromax.de/cdn/shop/files/kohlerost_lk7_einzeln.jpg?v=1697799861&width=1500"
+    },
+    {
+        "name": "Profi-Gasbrenner hf2",
+        "link": "https://petromax.de/products/profi-gasbrenner-hf2",
+        "image": "https://petromax.de/cdn/shop/files/Petromax_Hf2_Vollansicht_vorne.jpg?v=1697799360&width=1500"
+    },
+    {
+        "name": "Trichter mit Sieb",
+        "link": "https://petromax.de/products/trichter-mit-sieb",
+        "image": "https://petromax.de/cdn/shop/files/65_grande.jpg?v=1697797550"
+    },
+    {
+        "name": "Feuerkit",
+        "link": "https://petromax.de/products/feuerkit",
+        "image": "https://petromax.de/cdn/shop/files/Z7A3093.jpg?v=1697799481&width=1500"
+    },
+    {
+        "name": "Feuerrohr",
+        "link": "https://petromax.de/products/feuerrohr",
+        "image": "https://petromax.de/cdn/shop/files/Petromax_Feuerrohr_frh100_1_1.jpg?v=1697798399&width=1500"
+    },
+    {
+        "name": "Baumwollzunder",
+        "link": "https://petromax.de/products/baumwollzunder",
+        "image": "https://petromax.de/cdn/shop/files/plgx_c8.jpg?v=1697800312&width=1500"
+    },
+    {
+        "name": "Feuerkolben",
+        "link": "https://petromax.de/products/feuerkolben",
+        "image": "https://petromax.de/cdn/shop/files/plgx_Feuer_Kolben_Fire_Plunger_1.jpg?v=1697800304&width=1500"
+    },
+    {
+        "name": "Raketenofen Set RF33",
+        "link": "https://petromax.de/products/raketenofen-set-rf33",
+        "image": "https://petromax.de/cdn/shop/files/PX_SET_0015.jpg?v=1716813790&width=1500"
+    },
+    {
+        "name": "Petroleumleuchte HK500",
+        "link": "https://petromax.de/products/petroleumleuchte-hk500",
+        "image": "https://petromax.de/cdn/shop/files/px5_main.jpg?v=1713535371&width=1500"
+    },
+    {
+        "name": "Radiator & Prallteller HK350/HK500 Chrom",
+        "link": "https://petromax.de/products/radiator-prallteller-hk350-hk500-chrom",
+        "image": "https://petromax.de/cdn/shop/files/Radiator_mit_prallteller_chrom_grande.jpg?v=1696867652"
+    },
+    {
+        "name": "Radiator & Prallteller HK350/HK500 Messing",
+        "link": "https://petromax.de/products/radiator-prallteller-hk350-hk500-messing",
+        "image": "https://petromax.de/cdn/shop/files/Radiator_mit__Prallteller_Messing.jpg?v=1696867659&width=1500"
+    },
+    {
+        "name": "Radiator HK350/HK500",
+        "link": "https://petromax.de/products/radiator-hk350-hk500",
+        "image": "https://petromax.de/cdn/shop/files/24_radi_grande.jpg?v=1697800776"
+    },
+    {
+        "name": "Pultdach-Durchführung Loki + Loki2",
+        "link": "https://petromax.de/products/pultdach-durchfuhrung-loki-loki2",
+        "image": "https://petromax.de/cdn/shop/files/Frontier_shed_kit_2_grande.jpg?v=1697799560"
+    },
+    {
+        "name": "Tipi-Durchführung Loki",
+        "link": "https://petromax.de/products/tipi-durchfuhrung-loki",
+        "image": "https://petromax.de/cdn/shop/files/Frontier_Tipi_sleeve_grande.jpg?v=1697799570"
+    },
+    {
+        "name": "Sichtfenster Ofentür Loki2 (Ersatzteil)",
+        "link": "https://petromax.de/products/sichtfenster-ofentur-loki2-ersatzteil",
+        "image": "https://petromax.de/cdn/shop/files/sichtfenster_lk6_Z7A8710.jpg?v=1697799849&width=1500"
+    },
+    {
+        "name": "Petroleumleuchte HK500",
+        "link": "https://petromax.de/products/petroleumleuchte-hk500?variant=47859924861201",
+        "image": "https://petromax.de/cdn/shop/files/px5_main.jpg?v=1713535371&width=1500"
     }
 ]
