@@ -1,4 +1,4 @@
-import streamlit as st
+     import streamlit as st
 import json
 import os
 from langchain_core.messages import AIMessage, HumanMessage
@@ -32,7 +32,7 @@ def get_vectorstore_from_urls(urls):
         documents.extend(document_chunks)
 
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
+    embeddings = OpenAIEmbeddings()
 
     vector_store = Chroma.from_documents(documents, embeddings)
     return vector_store
