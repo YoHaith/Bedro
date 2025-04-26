@@ -32,7 +32,7 @@ def get_vectorstore_from_urls(urls):
         documents.extend(document_chunks)
 
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
 
     vector_store = Chroma.from_documents(documents, embeddings)
     return vector_store
