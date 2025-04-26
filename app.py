@@ -1,7 +1,6 @@
-# pip install streamlit langchain langchain-openai beautifulsoup4 python-dotenv chromadb requests fuzzywuzzy
-
 import streamlit as st
 import json
+import os
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -31,8 +30,11 @@ def get_vectorstore_from_urls(urls):
         text_splitter = RecursiveCharacterTextSplitter()
         document_chunks = text_splitter.split_documents([document])
         documents.extend(document_chunks)
-    
-    vector_store = Chroma.from_documents(documents, OpenAIEmbeddings())
+
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
+
+    vector_store = Chroma.from_documents(documents, embeddings)
     return vector_store
 
 def get_context_retriever_chain(vector_store):
