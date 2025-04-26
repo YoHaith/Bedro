@@ -1,3 +1,5 @@
+# pip install streamlit langchain langchain-openai beautifulsoup4 python-dotenv chromadb requests fuzzywuzzy
+
 import streamlit as st
 import json
 import os
@@ -31,8 +33,8 @@ def get_vectorstore_from_urls(urls):
         document_chunks = text_splitter.split_documents([document])
         documents.extend(document_chunks)
 
-    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-    embeddings = OpenAIEmbeddings(api_key=OPENAI_API_KEY)
+    # ✅ NO arguments passed to OpenAIEmbeddings
+    embeddings = OpenAIEmbeddings()
 
     vector_store = Chroma.from_documents(documents, embeddings)
     return vector_store
@@ -73,10 +75,10 @@ def load_json(file_path):
     return data
 
 def display_header():
-    logo_url = "https://i.imgur.com/qVy8JRy.png"  # Your logo URL
+    logo_url = "https://i.imgur.com/qVy8JRy.png"
     st.markdown(f"""
         <div style="text-align: center;">
-            <img src="{logo_url}" alt="Logo" style="width:20%;height:20%;">
+            <img src="{logo_url}" alt="Logo" style="width:20%;">
             <h2 style="color: black;">Born in the Wilderness</h2>
             <h5 style="color: Grey;">Du hast Fragen? Chat mit uns (BETA v1.0)</h5>
         </div>
@@ -101,7 +103,7 @@ def find_best_matches(query, products, threshold=70):
     best_matches = process.extract(query, product_names, scorer=fuzz.partial_ratio)
     filtered_matches = [match for match in best_matches if match[1] >= threshold]
     matched_products = []
-    for match in filtered_matches:
+    for match in best_matches:
         matched_name = match[0]
         for product in products:
             if product["name"] == matched_name:
@@ -115,7 +117,7 @@ def get_variant(query, products):
     for product in best_matches:
         if fuzz.partial_ratio(query, product["link"]) > 70:
             return product
-    return best_matches[0]  # Default to the first match if no specific variant is found
+    return best_matches[0]
 
 def get_unique_products(products):
     seen = set()
@@ -139,7 +141,6 @@ for message in st.session_state.chat_history:
     if isinstance(message, AIMessage):
         with st.chat_message("AI"):
             st.write(message.content)
-            # Show product link and image if available
             best_matches = find_best_matches(message.content, unique_products)
             for match in best_matches:
                 variant = get_variant(message.content, [product for product in products if product["name"] == match["name"]])
